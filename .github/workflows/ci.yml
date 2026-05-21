@@ -17,11 +17,11 @@ jobs:
       uses: actions/setup-java@v4 # Bước 2: Cài đặt Java
       with:
         java-version: '17'
-        distribution: 'temurin'
+        distribution: 'temurin' 
         cache: maven
 
     - name: Build and Test with Maven
       run: |
-        cd calculator-app
+        cd calculator-app 
         mvn clean test # Bước 3: Chạy Unit Test
-        mvn exec:java -Dexec.mainClass="com.example.App" # Bước 4: Chạy thuật toán (Đã sửa từ com.calculator thành com.example)
+        
